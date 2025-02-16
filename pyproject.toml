@@ -1,0 +1,14 @@
+[project]
+name = "coverage_pth"
+version = "0.0.3"
+description = "Coverage PTH file to enable coverage at the virtualenv level"
+readme = "README.rst"
+license = "BSD-2-clause"
+dependencies = ["coverage"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+include = ["*.pth"]
